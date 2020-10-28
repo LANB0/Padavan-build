@@ -44,7 +44,8 @@ jobs:
     - name: Build Firmware
       env:
         TNAME: RM2100
-        GOPATH: /home/runner/go
+        GOROOT: /opt/hostedtoolcache/go/1.15.3/x64
+        GOPATH: /opt/hostedtoolcache/go/1.15.3/x64
       run: |
         cd /opt/rt-n56u/trunk
         if [ ! -f configs/templates/$TNAME.config ] ; then
