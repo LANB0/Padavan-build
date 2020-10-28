@@ -44,6 +44,7 @@ jobs:
     - name: Build Firmware
       env:
         TNAME: RM2100
+        GOPATH: /home/runner/go
       run: |
         cd /opt/rt-n56u/trunk
         if [ ! -f configs/templates/$TNAME.config ] ; then
